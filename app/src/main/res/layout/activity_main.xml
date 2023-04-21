@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4C3671"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/createcv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Create CV"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/personal_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/createcv"
+        android:layout_marginTop="15dp"
+        android:layout_centerInParent="true"
+        android:text="Personal Information"
+        android:textColor="@color/white"
+        android:textSize="20dp" />
+
+    <RelativeLayout
+        android:id="@+id/rl_edt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/personal_info">
+
+        <EditText
+            android:id="@+id/Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name" />
+
+        <EditText
+            android:id="@+id/Fathername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Name"
+            android:hint="Father Name" />
+
+        <EditText
+            android:id="@+id/Surname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Fathername"
+            android:hint="Surname" />
+
+        <EditText
+            android:id="@+id/birthdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Surname"
+            android:hint="Date of Birth" />
+
+        <EditText
+            android:id="@+id/Adress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/birthdate"
+            android:hint="Adress" />
+
+        <EditText
+            android:id="@+id/Nationality"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Adress"
+            android:hint="Nationality" />
+
+        <EditText
+            android:id="@+id/Phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Nationality"
+            android:hint="Phone Number" />
+
+        <EditText
+            android:id="@+id/Email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Phone"
+            android:hint="Email Adress" />
+
+        <EditText
+            android:id="@+id/Designation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Email"
+            android:hint="Designation" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rl_edt_company"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_edt">
+        <TextView
+            android:id="@+id/txt_company_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Company Detail"
+            android:textColor="@color/white"
+            android:layout_centerHorizontal="true"/>
+
+        <EditText
+            android:id="@+id/C_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_company_detail"
+            android:hint="Company Name" />
+
+
+        <EditText
+            android:id="@+id/c_designation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/C_name"
+            android:hint="Designation" />
+
+        <EditText
+            android:id="@+id/C_joining"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/c_designation"
+            android:hint="Joining Date" />
+
+        <EditText
+            android:id="@+id/C_job_discription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/C_joining"
+            android:hint="Job Discription" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rl_edt_qualification"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_edt_company">
+        <TextView
+            android:id="@+id/txt_qualification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Qualification"
+            android:textColor="@color/white"
+            android:layout_centerHorizontal="true"/>
+        <EditText
+            android:id="@+id/degree_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Digree name"
+            android:layout_below="@id/txt_qualification"/>
+        <EditText
+            android:id="@+id/Institute_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Institute Name"
+            android:layout_below="@id/txt_qualification"/>
+
+    </RelativeLayout>
+</RelativeLayout>
